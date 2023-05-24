@@ -1,0 +1,50 @@
+<div class="container" *ngIf="data">
+
+    <h1>Overview</h1>
+    <hr>
+
+    <div class="card-containter">
+        <div class="card">
+            <div>
+                <h2>{{ data.data[0].reach}}K</h2>
+                <h4>Acount Reached</h4>
+            </div>
+            <img class="logo" src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_640.jpg" alt="logo">
+
+        </div>
+        <div class="card">
+            <div>
+                <h2>{{ data.data[0].impressions}}K</h2>
+                <h4>Impressions</h4>
+            </div>
+            <img class="logo" src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_640.jpg" alt="logo">
+
+
+        </div>
+        <div class="card">
+            <div>
+                <h2>{{ data.data[0].followers}}K</h2>
+                <h4>Followers</h4>
+            </div>
+            <img class="logo" src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_640.jpg" alt="logo">
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="chart-container">
+    <div class="chart">
+
+        <div>
+
+            <h1>Evolution</h1>
+            <hr>
+
+        </div>
+
+        <canvas id="Chart1"></canvas>
+    </div>
+
+</div>
